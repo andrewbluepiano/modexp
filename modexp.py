@@ -1,3 +1,4 @@
+#Author: Andrew Afonso
 #Solves for x for equations in the format:
 print("a^x = b mod c")
 a = int(input("a:"))
