@@ -1,4 +1,4 @@
 # modexp
-a quick script for homework. 
-#Solves for x for equations in the format:
+a quick script for homework. <br>
+# Solves for x for equations in the format: <br>
 a^x = b mod c
