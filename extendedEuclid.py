@@ -15,16 +15,6 @@ whyprimes = []
 gcd = math.gcd(aay, bee)
 print("a   b   q   r")
 print("-------------")
-def findPhi( thenum ):
-    count = 0
-    track = 0
-    while count < thenum:
-        outp = math.gcd(thenum, count)
-        if outp == 1:
-            track+=1
-        count+=1
-    return track;
-
 
 while bee != 0:
     aays.append(aay)
@@ -42,8 +32,6 @@ ex = 0
 why = 1
 exprime = 1
 whyprime = 0
-
-
 
 while track > 0:
     exes.append(ex)
