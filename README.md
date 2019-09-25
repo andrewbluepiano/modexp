@@ -1,6 +1,6 @@
 # Yep
 Just scripts to keep me from having to do math <br>
-Generally they all display nicely. <br>
+Generally they all display nicely. (Pretty Print)<br>
 # affinedecryptor
 Feed it a string, and the decryption key k = (a, b) <br> 
 # aMODnOrderFinder
