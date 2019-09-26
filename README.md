@@ -14,4 +14,7 @@ Solves for x for equations in the format: <br>
 a^x = b mod c <br>
 # phifinder 
 Find all integers n between 0 ≤ n < m that are relatively prime to m. <br>
-Euler’s phi function
+Euler’s phi function <br>
+# streamCipherOne
+To solve this: <br>
+Develop a scheme which operates with the letters A, B,..., Z, represented by the numbers 0,1,...,25.
