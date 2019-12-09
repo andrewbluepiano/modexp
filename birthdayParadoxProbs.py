@@ -1,6 +1,7 @@
 # Author: Andrew Afonso
-# Finds probability of no birthday collisions for t people, for single t or range. 
+# Finds probability of no birthday collisions for t people. Outputs things to a CSV file birthday.csv
 import sys
+import csv
 
 def prob(t):
     # Probability as float
@@ -23,8 +24,11 @@ def main():
     elif len(sys.argv) == 3:
         a = int(sys.argv[1])
         b = int(sys.argv[2])
-        for t in range(a, b+1):
-            print("Probability of no Birthday Collision for " + str(t) + " people: " + str(prob(t)))
+        with open('birthday.csv', 'a', newline='') as csvfile:
+            csvwriter = csv.writer(csvfile)
+            for t in range(a, b+1):
+                csvwriter.writerow([str(t), str(prob(t))])
+                print("Probability of no Birthday Collision for " + str(t) + " people: " + str(prob(t)))
     else:
         print("Need a number, or range")
         exit()
