@@ -12,7 +12,7 @@ Feed it a string, it will give you the frequency of each letter as percentages. 
 # extendedEuclid
 Feed it two numbers, a and b. I think a should be bigger than b, but I am just working off two examples given to me, not the proofs. It does the Extended Euclid algorithm, and finds the mutual multiplicative inverses. <br>
 # hashCollisionProbApprox
-Finds probability of no collisions for hash function using function e^-(sum(1 -> t-1) / 365) <br>
+Finds probability of no collisions for hash function using function e^-(sum(1 -> t-1) / 365) (birthday paradox, so 2^n is 365) <br>
 # millerRabinsSMPrimality
 Primality tester: Uses Miller Rabins and Square Multiply to check if a number is a prime liar. <br>
 Threaded<br>
