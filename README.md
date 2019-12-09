@@ -9,6 +9,9 @@ Give it the number for n, it prints out all the orders of a mod n that exist (sa
 Feed it a string, it will give you the frequency of each letter as percentages. <br> 
 # extendedEuclid
 Feed it two numbers, a and b. I think a should be bigger than b, but I am just working off two examples given to me, not the proofs. It does the Extended Euclid algorithm, and finds the mutual multiplicative inverses. <br>
+# millerRabinsSMPrimality
+Primality tester: Uses Miller Rabins and Square Multiply to check if a number is a prime liar. <br>
+Threaded<br>
 # modexp
 Solves for x for equations in the format: <br>
 a^x = b mod c <br>
