@@ -1,7 +1,8 @@
 # Author: Andrew Afonso
-# Finds probability of no collisions for hash function using function e^-(sum(1 -> t-1) / 365)
+# Finds probability of no collisions for hash function using function e^-(sum(1 -> t-1) / 365). Outputs things to a CSV file hashprob.csv
 import sys
 import math
+import csv
 
 def prob(t):
     # Probability as float
@@ -18,8 +19,11 @@ def main():
     elif len(sys.argv) == 3:
         a = int(sys.argv[1])
         b = int(sys.argv[2])
-        for t in range(a, b+1):
-            print("Probability of no Collision for " + str(t) + " people: " + str(prob(t)))
+        with open('hashprob.csv', 'a', newline='') as csvfile:
+            csvwriter = csv.writer(csvfile)
+            for t in range(a, b+1):
+                csvwriter.writerow([str(t), str(prob(t))])
+                print("Probability of no Collision for " + str(t) + " people: " + str(prob(t)))
     else:
         print("Need a number, or range")
         exit()
